@@ -207,19 +207,21 @@ def render_cron_page():
 
 def render_dashboard():
     st.set_page_config(page_title="Website Change Notifier", layout="wide")
-    st.title("🔍 Website Change Notifier")
+    st.title("🔍 Webpage Change Notifier")
 
     st.markdown(
         """
 This app monitors multiple websites and sends you Telegram notifications when **any change** is detected.
-
-**How it works:**
-1. Add URLs below.
-2. Deploy this app to Streamlit Cloud.
-3. Configure cron-job.org to hit this app every 30 minutes.
-4. When a page changes, you'll get a Telegram message.
-"""
-    )
+""")
+# st.markdown(
+#         """
+# **How it works:**
+# 1. Add URLs below.
+# 2. Deploy this app to Streamlit Cloud.
+# 3. Configure cron-job.org to hit this app every 30 minutes.
+# 4. When a page changes, you'll get a Telegram message.
+# """
+#     )
 
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         st.warning(
