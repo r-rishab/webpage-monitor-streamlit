@@ -319,19 +319,19 @@ This app monitors multiple websites and sends you Telegram notifications when **
             st.error(f"{len(errors)} site(s) had errors. See server logs for details.")
 
     # ------------- Cron URL info -------------
-    st.header("Scheduler setup (cron-job.org)")
+#     st.header("Scheduler setup (cron-job.org)")
 
-    # For docs, we show a placeholder URL; user should replace with their real one.
-    st.markdown(
-        """
-1. Deploy this app to **Streamlit Community Cloud**.
-2. Copy your app URL, e.g. `https://your-username-your-repo-name.streamlit.app/`
-3. In cron-job.org, create a new job:
-   - Target URL: `https://your-username-your-repo-name.streamlit.app/?cron=1&key=YOUR_CRON_KEY`
-   - Schedule: every 30 minutes
-4. Set `CRON_KEY` in Streamlit secrets to the same value (`YOUR_CRON_KEY`) for security.
-"""
-    )
+#     # For docs, we show a placeholder URL; user should replace with their real one.
+#     st.markdown(
+#         """
+# 1. Deploy this app to **Streamlit Community Cloud**.
+# 2. Copy your app URL, e.g. `https://your-username-your-repo-name.streamlit.app/`
+# 3. In cron-job.org, create a new job:
+#    - Target URL: `https://your-username-your-repo-name.streamlit.app/?cron=1&key=YOUR_CRON_KEY`
+#    - Schedule: every 30 minutes
+# 4. Set `CRON_KEY` in Streamlit secrets to the same value (`YOUR_CRON_KEY`) for security.
+# """
+#     )
 
 
 # =========================================================
